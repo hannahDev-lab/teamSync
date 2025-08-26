@@ -1,6 +1,6 @@
 # Dependencies
-/node_modules
-/.pnpm-store
+node_modules
+.pnpm-store
 
 # Build artifacts
 /.next/
@@ -26,3 +26,6 @@ pnpm-debug.log*
 *.sln
 *.sw?
 .DS_Store
+
+# related to description.md
+PROJECT_BRIEF.md
