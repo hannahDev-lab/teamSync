@@ -2,11 +2,19 @@
   "name": "TeamSync",
   "version": "1.0.0",
   "description": "",
+  "packageManager": "pnpm@9.14.2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo build",
+    "dev": "concurrently \"pnpm:dev:*\"",
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api start:dev"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "turbo": "^2.5.6"
+  }
 }
